@@ -44,6 +44,15 @@ a:hover {
   margin-top: 20px;
 }
 
+.campo input, .campo textarea, select {
+  transition: all 1s;
+}
+.campo input:focus, .campo textarea:focus, select:focus {
+  font-size: 30px;
+  background: orange;
+  color: blue;
+}
+
 ul li {
   list-style: none;
   display: inline;
@@ -169,5 +178,33 @@ ion-icon {
 @media (min-width: 720px) {
   .check input {
     display: none;
+  }
+}
+@keyframes miEfecto {
+  0% {
+    position: relative;
+    left: -100%;
+  }
+  100% {
+    left: 100%;
+  }
+}
+@media (min-width: 968px) {
+  .desplazar {
+    animation: miEfecto 5s ease-in 1s 1 normal;
+  }
+}
+@keyframes miEfecto2 {
+  0% {
+    position: relative;
+    right: -100%;
+  }
+  100% {
+    right: 100%;
+  }
+}
+@media (min-width: 968px) {
+  .efecto2 {
+    animation: miEfecto2 5s ease-in 1s 1 normal;
   }
 }/*# sourceMappingURL=main.css.map */
