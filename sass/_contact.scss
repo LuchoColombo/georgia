@@ -1,0 +1,32 @@
+.formulario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: beige;
+    padding-bottom: 100px;
+  
+    form {
+      .txt {
+        border: none;
+        border-bottom: 1px solid #c9c9c9;
+        font-size: 14px;
+        width: 100%;
+        min-height: 40px;
+        color: #292929;
+        margin-bottom: 20px;
+        padding-left: 5px;
+      }
+      .centrado {
+        text-align: center;
+        .butt {
+          height: 35px;
+          width: 10%;
+          text-align: center;
+          margin-top: 20px;
+        }
+      }
+      .margen {
+        margin-top: 5px;
+      }
+    }
+  }

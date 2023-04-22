@@ -1,4 +1,10 @@
-$font-family: sans-serif;
+@import "vars";
+@import "header";
+@import "footer";
+@import "index";
+@import "accesories";
+@import "contact";
+@import "about";
 
 * {
   margin: 0;
@@ -9,7 +15,7 @@ $font-family: sans-serif;
 
 main {
   background-color: beige;
-  padding-top: 1px;
+  padding-top: 7rem;
 }
 
 h2.titulo {
@@ -20,90 +26,6 @@ h2.titulo {
 
 a:hover {
   color: tomato !important;
-}
-
-.formulario {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color: beige;
-  padding-bottom: 100px;
-
-  form {
-    .txt {
-      border: none;
-      border-bottom: 1px solid #c9c9c9;
-      font-size: 14px;
-      width: 100%;
-      min-height: 40px;
-      color: #292929;
-      margin-bottom: 20px;
-      padding-left: 5px;
-    }
-
-    .butt {
-      height: 35px;
-      width: 10%;
-      text-align: center;
-      margin-top: 20px;
-    }
-  }
-}
-
-.campo input, .campo textarea, select  {
-  transition: all 1s;
-  &:focus {
-    font-size: 30px;
-    background: orange;
-    color: blue;
-  }
-}
-
-ul {
-  li {
-    list-style: none;
-    display: inline;
-  }
-}
-
-.ordenado {
-  display: flex;
-  justify-content: center;
-  gap: 40px;
-  text-align: center;
-  padding-top: 20px;
-  flex-flow: row wrap;
-  max-width: 66em;
-  align-items: center;
-  margin-left: auto;
-  margin-right: auto;
-
-  .flex-item {
-    font-family: $font-family;
-    padding: 5px;
-    text-align: center;
-
-    div {
-      h4 {
-        font-size: 16px;
-        font-weight: bold;
-      }
-
-      h5 {
-        font-size: 16px;
-      }
-
-      h6 {
-        font-size: 14px;
-        font-weight: bold;
-      }
-    }
-
-    .imagen {
-      width: 200px;
-      height: 250px;
-    }
-  }
 }
 
 img.banner {
@@ -126,35 +48,6 @@ div.foot {
   margin-top: 100px;
   padding-top: 20px;
   padding-bottom: 50px;
-}
-
-.local {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-top: 100px;
-  margin-bottom: 100px;
-
-  img {
-    width: 75%;
-    height: auto;
-  }
-}
-
-.nosotros {
-  display: flex;
-  flex-direction: column;
-  margin: 0 auto;
-  max-width: 75%;
-
-  p.sobre {
-    font-size: 18px;
-    align-items: center;
-  }
-}
-
-ion-icon {
-  font-size: 32px;
 }
 
 #siteIntro {
@@ -183,64 +76,4 @@ ion-icon {
     grid-template-columns: 1fr;
     padding: 25px;
   }
-}
-
-@media (max-width: 720px) {
-  .check {
-    input + div {
-      display: none;
-    }
-
-    input:checked + div {
-      display: block;
-    }
-  }
-
-  .local {
-    img {
-      width: 90vw;
-      height: auto;
-    }
-  }
-}
-
-@media (min-width: 720px) {
-  .check {
-    input {
-      display: none;
-    }
-  }
-}
-
-@keyframes miEfecto {
-  0% {
-    position: relative;
-    left: -100%;
-  }
-  100% {
-    left: 100%;
-  }
-}
-
-@media (min-width: 968px) {
-  .desplazar {
-    animation: miEfecto 5s ease-in 1s 1 normal;
-  }
-  
-}
-
-@keyframes miEfecto2 {
-  0% {
-    position: relative;
-    right: -100%;
-  }
-  100% {
-    right: 100%;
-  }
-}
-
-@media (min-width: 968px) {
-  .efecto2 {
-    animation: miEfecto2 5s ease-in 1s 1 normal;
-  } 
 }
