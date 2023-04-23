@@ -3,9 +3,10 @@ header {
   align-items: center;
   justify-content: space-between;
   padding: 1rem 2rem 1rem 2rem;
-  background-color: #ececec;
+  background-color: #cecaca;
   position: fixed;
   font-size: 18px;
+  border-bottom: 1px solid white;
   top: 0;
   left: 0;
   width: 100%;
@@ -206,7 +207,7 @@ footer .footer-bottom {
   width: 100%;
 }
 .descripciones article h2 {
-  margin-top: 0;
+  margin-top: 15px;
   text-align: center;
 }
 .descripciones article p {
@@ -266,7 +267,7 @@ footer .footer-bottom {
   background-color: #eee;
   box-sizing: border-box;
   width: 250px;
-  min-height: 440px;
+  min-height: 450px;
 }
 .ordenado .flex-item div h2 {
   font-size: 20px;
@@ -280,7 +281,7 @@ footer .footer-bottom {
   font-size: 16px;
 }
 .ordenado .flex-item div h6 {
-  font-size: 14px;
+  font-size: 18px;
   font-weight: bold;
 }
 .ordenado .flex-item .imagen {
@@ -292,7 +293,6 @@ footer .footer-bottom {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: beige;
   padding-bottom: 100px;
   margin-left: 10px;
   margin-right: 10px;
@@ -343,6 +343,12 @@ footer .footer-bottom {
   font-size: 18px;
   align-items: center;
 }
+.nosotros p.eslogan {
+  text-align: center;
+  font-size: 26px;
+  font-weight: bold;
+  margin-top: 50px;
+}
 .nosotros .ocultar {
   -webkit-appearance: none;
      -moz-appearance: none;
@@ -387,7 +393,7 @@ footer .footer-bottom {
 }
 
 main {
-  background-color: beige;
+  background-color: #ececec;
   padding-top: 7rem;
   padding-bottom: 50px;
 }
