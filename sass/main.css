@@ -212,7 +212,11 @@ footer .footer-bottom {
 .descripciones article p {
   margin-bottom: 0;
 }
-.descripciones article button {
+.descripciones article a {
+  text-decoration: none;
+  color: white;
+}
+.descripciones article a button {
   background-color: #333;
   color: #fff;
   padding: 10px 20px;
@@ -221,9 +225,8 @@ footer .footer-bottom {
   cursor: pointer;
   margin-top: 10px;
 }
-.descripciones article button a {
-  text-decoration: none;
-  color: white;
+.descripciones article a button:hover {
+  color: tomato;
 }
 
 @media screen and (max-width: 720px) {
