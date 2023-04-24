@@ -467,11 +467,4 @@ div.foot {
   flex-direction: row;
   justify-content: center;
   height: 50%;
-}
-
-@media (max-width: 720px) {
-  #siteIntro {
-    grid-template-columns: 1fr;
-    padding: 25px;
-  }
 }/*# sourceMappingURL=main.css.map */
