@@ -11,6 +11,7 @@ header {
   left: 0;
   width: 100%;
   z-index: 100;
+  opacity: 0.95;
 }
 header .logo {
   max-width: 5rem;
@@ -213,10 +214,6 @@ footer .footer-bottom {
 .descripciones article p {
   margin-bottom: 0;
 }
-.descripciones article a {
-  text-decoration: none;
-  color: white;
-}
 .descripciones article a button {
   background-color: #333;
   color: #fff;
@@ -397,19 +394,43 @@ main {
   padding-top: 7rem;
   padding-bottom: 50px;
 }
+main .titulo {
+  width: 100%;
+  border-bottom: 3px solid gray;
+  margin-bottom: 75px;
+}
+main .titulo h1 {
+  text-align: center;
+  font-size: 15vw;
+  text-shadow: 0px 1vh 0px rgb(182, 182, 182);
+  opacity: 0.8;
+}
+main .titulo2 {
+  width: 100%;
+  margin-bottom: 75px;
+}
+main .titulo2 h2 {
+  text-align: center;
+  font-size: 5vw;
+}
 
-h2.titulo {
+.subtitulo {
   text-align: center;
   margin-top: 30px;
   margin-bottom: 30px;
+  font-size: 3vw;
 }
 
 a:hover {
   color: tomato !important;
 }
 
-img.banner {
+.banner {
+  margin-top: -7rem;
+}
+.banner img {
   width: 100%;
+  max-height: 35rem;
 }
 
 .cadena {

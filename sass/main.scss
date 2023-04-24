@@ -17,20 +17,45 @@ main {
   background-color: #ececec;
   padding-top: 7rem;
   padding-bottom: 50px;
+  .titulo {
+    width: 100%;
+    border-bottom: 3px solid gray;
+    margin-bottom: 75px;
+    h1 {
+      text-align: center;
+      font-size: 15vw;
+      text-shadow: 0px 1vh 0px rgb(182, 182, 182);
+      opacity: 0.8;
+    }
+  }
+  .titulo2 {
+    width: 100%;
+    margin-bottom: 75px;
+    h2 {
+      text-align: center;
+      font-size: 5vw;
+
+    }
+  }
 }
 
-h2.titulo {
+.subtitulo {
   text-align: center;
   margin-top: 30px;
   margin-bottom: 30px;
+  font-size: 3vw;
 }
 
 a:hover {
   color: tomato !important;
 }
 
-img.banner {
-  width: 100%;
+.banner {
+  margin-top: -7rem;
+  img {
+    width: 100%;
+    max-height: 35rem;
+  }
 }
 
 .cadena {

@@ -21,21 +21,16 @@
     p {
       margin-bottom: 0;
     }
-
-    a {
-      text-decoration: none;
-      color: white;
-      button {
-        background-color: #333;
-        color: #fff;
-        padding: 10px 20px;
-        border: none;
-        border-radius: 5px;
-        cursor: pointer;
-        margin-top: 10px;
-        &:hover {
-          color: tomato;
-        }
+    a button {
+      background-color: #333;
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-top: 10px;
+      &:hover {
+        color: tomato;
       }
     }
   }
