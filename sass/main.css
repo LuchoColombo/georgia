@@ -31,7 +31,7 @@ header .nav-list li a {
   display: none;
 }
 
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 750px) {
   .abrir-menu,
   .cerrar-menu {
     display: block;
@@ -258,7 +258,6 @@ footer .footer-bottom {
   margin-right: auto;
 }
 .ordenado .flex-item {
-  font-family: sans-serif;
   padding: 5px;
   text-align: center;
   background-color: #eee;
@@ -386,7 +385,7 @@ footer .footer-bottom {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: sans-serif;
+  font-family: "Lucida Bright", Georgia, serif;
 }
 
 main {
@@ -402,8 +401,8 @@ main .titulo {
 main .titulo h1 {
   text-align: center;
   font-size: 15vw;
-  text-shadow: 0px 1vh 0px rgb(182, 182, 182);
-  opacity: 0.8;
+  color: black;
+  opacity: 0.9;
 }
 main .titulo2 {
   width: 100%;
@@ -418,7 +417,7 @@ main .titulo2 h2 {
   text-align: center;
   margin-top: 30px;
   margin-bottom: 30px;
-  font-size: 6vw;
+  font-size: 4vw;
   font-weight: bold;
 }
 
