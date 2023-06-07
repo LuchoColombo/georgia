@@ -1,6 +1,7 @@
 const anillosProd = document.getElementById("anillosProd");
 const verCarrito = document.getElementById("verCarrito");
 const modalContainer = document.getElementById("modalContainer");
+const cantidadCarrito = document.getElementById("cantidadCarrito");
 
 const productos = [
   {
@@ -105,57 +106,31 @@ productos.forEach((producto) => {
   anillosProd.append(content);
 
   let comprar = document.createElement("button");
-  comprar.className = "comprar-butt";
+  comprar.className = "comprar-borrar";
   comprar.innerText = "Comprar";
 
   content.append(comprar);
 
   comprar.addEventListener("click", () => {
-    carrito.push({
-      id: producto.id,
-      img: producto.img,
-      nombre: producto.nombre,
-      precio: producto.precioOfer,
-    });
+    const repeat = carrito.some(
+      (repeatProducto) => repeatProducto.id === producto.id
+    );
+
+    if (repeat) {
+      carrito.map((prod) => {
+        if (prod.id === prod.id) {
+          alert("Ya agregaste este producto a las lista");
+        }
+      });
+    } else {
+      carrito.push({
+        id: producto.id,
+        img: producto.img,
+        nombre: producto.nombre,
+        precio: producto.precioOfer,
+      });
+      alert("Producto agregado con exito");
+    }
+    carritoCounter();
   });
-});
-
-verCarrito.addEventListener("click", () => {
-  modalContainer.innerHTML = "";
-  modalContainer.style.display = "flex";
-  const modalHeader = document.createElement("div");
-  modalHeader.className = "modal-header";
-  modalHeader.innerHTML = `
-    <h1 class="modal-header-title">Carrito.</h1>  
-  `;
-  modalContainer.append(modalHeader);
-
-  const modalButton = document.createElement("h1");
-  modalButton.innerText = "X";
-  modalButton.className = "modal-header-button";
-
-  modalButton.addEventListener("click", () => {
-    modalContainer.style.display = "none";
-  });
-
-  modalHeader.append(modalButton);
-
-  carrito.forEach((producto) => {
-    let carritoContent = document.createElement("div");
-    carritoContent.className = "modal-content";
-    carritoContent.innerHTML = `
-    <img src="${producto.img}" alt="Anillo" class="imagen" />
-            <h2>${producto.nombre}</h2>
-            <h5>$ ${producto.precio}</h5>
-    `;
-
-    modalContainer.append(carritoContent);
-  });
-
-  const total = carrito.reduce((acc, el) => acc + el.precio, 0);
-
-  const totalComprado = document.createElement("div");
-  totalComprado.className = "total-content";
-  totalComprado.innerHTML = `total a pagar $ ${total}`;
-  modalContainer.append(totalComprado);
 });

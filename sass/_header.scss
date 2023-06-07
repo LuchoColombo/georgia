@@ -25,10 +25,22 @@ header {
       text-decoration: none;
       color: #1c1c1c;
     }
-    .logoCarrito {
-    justify-content: end;
-    }
   }
+}
+.logoCarrito {
+  padding-left: 25px;
+  cursor: pointer;
+}
+.cantidadCarrito {
+  background-color: red;
+  color: white;
+  border-radius: 50%;
+  font-size: 12px;
+  margin-left: 25px;
+  padding: 4px;
+  top: 37px;
+  position: absolute;
+  display: none;
 }
 
 .abrir-menu,
@@ -36,7 +48,7 @@ header {
   display: none;
 }
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 825px) {
   .abrir-menu,
   .cerrar-menu {
     display: block;
