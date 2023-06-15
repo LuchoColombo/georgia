@@ -86,14 +86,27 @@ const productos = [
     precioOfer: 11000 * 0.85,
     img: "../img/anillo9.jpg",
   },
+  {
+    id: 10,
+    nombre: "Collar Rumania",
+    categoria: "collar",
+    descripcion: "Collar de Plata 925 Italiana con detalles en baño de oro 18k",
+    precio: 11000,
+    precioOfer: 11000 * 0.85,
+    img: "../img/collar1.jpg",
+  },
 ];
 
 let carrito = [];
 
-productos.forEach((producto) => {
-  let content = document.createElement("article");
-  content.className = "flex-item";
-  content.innerHTML = `
+const productoTipo = (tipo, productos, elementoProd) => {
+  const productosFilterByType = productos.filter(
+    (productos) => productos.categoria === tipo
+  );
+  productosFilterByType.forEach((producto) => {
+    let content = document.createElement("article");
+    content.className = "flex-item";
+    content.innerHTML = `
   <img src="${producto.img}" alt="Anillo" class="imagen" />
           <div>
             <h2>${producto.nombre}</h2>
@@ -103,34 +116,49 @@ productos.forEach((producto) => {
           </div>
   `;
 
-  anillosProd.append(content);
+    elementoProd.append(content);
 
-  let comprar = document.createElement("button");
-  comprar.className = "comprar-borrar";
-  comprar.innerText = "Comprar";
+    let comprar = document.createElement("button");
+    comprar.className = "comprar-borrar";
+    comprar.innerText = "Comprar";
 
-  content.append(comprar);
+    content.append(comprar);
 
-  comprar.addEventListener("click", () => {
-    const repeat = carrito.some(
-      (repeatProducto) => repeatProducto.id === producto.id
-    );
+    comprar.addEventListener("click", () => {
+      const repeat = carrito.some(
+        (repeatProducto) => repeatProducto.id === producto.id
+      );
 
-    if (repeat) {
-      carrito.map((prod) => {
-        if (prod.id === prod.id) {
-          alert("Ya agregaste este producto a las lista");
-        }
-      });
-    } else {
-      carrito.push({
-        id: producto.id,
-        img: producto.img,
-        nombre: producto.nombre,
-        precio: producto.precioOfer,
-      });
-      alert("Producto agregado con exito");
-    }
-    carritoCounter();
+      if (repeat) {
+        carrito.map((prod) => {
+          if (prod.id === prod.id) {
+            Swal.fire({
+              position: "top-center",
+              icon: "error",
+              title: "Producto ya agregado a la lista",
+              showConfirmButton: false,
+              timer: 1500,
+            });
+          }
+        });
+      } else {
+        carrito.push({
+          id: producto.id,
+          img: producto.img,
+          nombre: producto.nombre,
+          precio: producto.precioOfer,
+        });
+        Swal.fire({
+          position: "top-center",
+          icon: "success",
+          title: "Producto agregado con exito",
+          showConfirmButton: false,
+          timer: 1500,
+        });
+      }
+      carritoCounter();
+    });
   });
-});
+};
+
+productoTipo("anillo", productos, anillosProd);
