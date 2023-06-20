@@ -97,7 +97,7 @@ const productos = [
   },
 ];
 
-let carrito = [];
+let carrito = JSON.parse(localStorage.getItem("carrito")) || [];
 
 const productoTipo = (tipo, productos, elementoProd) => {
   const productosFilterByType = productos.filter(
@@ -157,8 +157,13 @@ const productoTipo = (tipo, productos, elementoProd) => {
         });
       }
       carritoCounter();
+      saveLocal();
     });
   });
 };
 
 productoTipo("anillo", productos, anillosProd);
+
+const saveLocal = () => {
+  localStorage.setItem("carrito", JSON.stringify(carrito));
+};
