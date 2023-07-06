@@ -16,7 +16,7 @@
     background-color: #eee;
     box-sizing: border-box;
     width: 250px;
-    min-height: 450px;
+    min-height: 460px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     div {
       h2 {
@@ -26,6 +26,7 @@
       }
       h4 {
         font-size: 16px;
+        min-height: 40px;
       }
 
       h5 {
@@ -48,11 +49,13 @@
 .comprar-borrar {
   background-color: #333;
   color: #fff;
+  justify-content: space-between;
   padding: 10px 20px;
   border: none;
   border-radius: 5px;
   cursor: pointer;
   margin-top: 10px;
+  margin-bottom: 10px;
   &:hover {
     opacity: 0.9;
     color: tomato;

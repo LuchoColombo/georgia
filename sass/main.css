@@ -280,7 +280,7 @@ footer .footer-bottom {
   background-color: #eee;
   box-sizing: border-box;
   width: 250px;
-  min-height: 450px;
+  min-height: 460px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 .ordenado .flex-item div h2 {
@@ -290,6 +290,7 @@ footer .footer-bottom {
 }
 .ordenado .flex-item div h4 {
   font-size: 16px;
+  min-height: 40px;
 }
 .ordenado .flex-item div h5 {
   font-size: 16px;
@@ -306,11 +307,13 @@ footer .footer-bottom {
 .comprar-borrar {
   background-color: #333;
   color: #fff;
+  justify-content: space-between;
   padding: 10px 20px;
   border: none;
   border-radius: 5px;
   cursor: pointer;
   margin-top: 10px;
+  margin-bottom: 10px;
 }
 .comprar-borrar:hover {
   opacity: 0.9;
@@ -426,7 +429,8 @@ footer .footer-bottom {
   position: fixed;
   overflow: auto;
   z-index: 9;
-  top: 12vh;
+  top: 5vh;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
   scrollbar-color: none;
 }
 .modal-container::-webkit-scrollbar {
@@ -434,34 +438,74 @@ footer .footer-bottom {
 }
 .modal-container .modal-header {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  align-items: center;
   background-color: #0a0909;
-  color: #fff;
+  padding: 15px;
   width: 100%;
+  position: sticky;
+  top: 0;
+  z-index: 10;
 }
 .modal-container .modal-header-title {
-  justify-self: start;
+  margin: 0;
+  font-size: 1.9rem;
+  color: #fff;
 }
-.modal-container .modal-header-button {
+.modal-container .modal-header .modal-header-button {
+  color: #fff;
+  font-size: 1.9rem;
   cursor: pointer;
+  transition: color 0.3s ease;
+}
+.modal-container .modal-header .modal-header-button:hover {
+  color: #aaa;
 }
 .modal-container .modal-content {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  width: 70%;
-  margin: 10px;
+  width: 90%;
+  margin: 20px 0;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
 }
 .modal-container .modal-content img {
   height: 120px;
   width: 120px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+.modal-container .modal-content h2 {
+  margin: 0 0 5px;
+  font-size: 1.6rem;
+  font-weight: bold;
 }
 .modal-container .total-content {
-  font-size: 25px;
+  font-size: 1.6rem;
   padding: 20px;
   text-align: center;
-  padding-top: 20px;
+  background-color: #0a0909;
+  border-radius: 5px;
+  color: #fff;
+  width: 100%;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.modal-container .total-content:hover {
+  background-color: #222;
+}
+@media screen and (min-width: 826px) {
+  .modal-container .modal-content {
+    flex-direction: row;
+  }
+  .modal-container .modal-content img {
+    margin-right: 20px;
+  }
 }
 
 * {

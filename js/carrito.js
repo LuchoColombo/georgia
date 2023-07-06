@@ -42,7 +42,7 @@ const pintarCarrito = () => {
 
   const totalComprado = document.createElement("div");
   totalComprado.className = "total-content";
-  totalComprado.innerHTML = `total a pagar $ ${total}`;
+  totalComprado.innerHTML = `Total a pagar $ ${total}`;
   modalContainer.append(totalComprado);
 };
 verCarrito.addEventListener("click", pintarCarrito);

@@ -82,11 +82,146 @@
   },
   {
     "id": 10,
+    "nombre": "Aros Grecia Gold",
+    "categoria": "aro",
+    "descripcion": "Aros de Plata 925 Italiana con baño Dorado",
+    "precio": 15000,
+    "precioOfer": 15000,
+    "img": "../img/aros1.jpg"
+  },
+  {
+    "id": 11,
+    "nombre": "Aros Italia Gold",
+    "categoria": "aro",
+    "descripcion": "Aros de Plata 925 Italiana con baño dorado",
+    "precio": 24000,
+    "precioOfer": 24000,
+    "img": "../img/aros2.jpg"
+  },
+  {
+    "id": 12,
+    "nombre": "Aros Eslovenia Rose",
+    "categoria": "aro",
+    "descripcion": "Aros de Plata 925 Italiana con baño rosado",
+    "precio": 8000,
+    "precioOfer": 8000,
+    "img": "../img/aros3.jpg"
+  },
+  {
+    "id": 13,
+    "nombre": "Aros Mónaco Rose",
+    "categoria": "aro",
+    "descripcion": "Aros de Plata 925 Italiana con baño rosado",
+    "precio": 9000,
+    "precioOfer": 9000,
+    "img": "../img/aros4.jpg"
+  },
+  {
+    "id": 14,
+    "nombre": "Aros Bielorrusia Silver",
+    "categoria": "aro",
+    "descripcion": "Aros de Plata 925 Italiana",
+    "precio": 16000,
+    "precioOfer": 16000,
+    "img": "../img/aros5.jpg"
+  },
+  {
+    "id": 15,
+    "nombre": "Argollas Letonia Silver N° 0",
+    "categoria": "aro",
+    "descripcion": "Argollas de Plata 925 Italian",
+    "precio": 3000,
+    "precioOfer": 3000,
+    "img": "../img/aros8.jpg"
+  },
+  {
+    "id": 16,
+    "nombre": "Argollas Letonia Silver N° 2",
+    "categoria": "aro",
+    "descripcion": "Argollas de Plata 925 Italian",
+    "precio": 3500,
+    "precioOfer": 3500,
+    "img": "../img/aros6.jpg"
+  },
+  {
+    "id": 17,
+    "nombre": "Argollas Moldova Gold N° 4",
+    "categoria": "aro",
+    "descripcion": "Argollas de Plata 925 Italiana con baño dorado",
+    "precio": 7200,
+    "precioOfer": 7200,
+    "img": "../img/aros9.jpg"
+  },
+  {
+    "id": 18,
+    "nombre": "Argollas Moldova Gold N° 5",
+    "categoria": "aro",
+    "descripcion": "Argollas de Plata 925 Italiana con baño dorado",
+    "precio": 7700,
+    "precioOfer": 7700,
+    "img": "../img/aros10.jpg"
+  },
+  {
+    "id": 19,
+    "nombre": "Argollas Moldova Gold N° 8",
+    "categoria": "aro",
+    "descripcion": "Argollas de Plata 925 Italiana con baño dorado",
+    "precio": 10100,
+    "precioOfer": 101000,
+    "img": "../img/aros7.jpg"
+  },
+  {
+    "id": 20,
     "nombre": "Collar Rumania",
     "categoria": "collar",
     "descripcion": "Collar de Plata 925 Italiana con detalles en baño de oro 18k",
     "precio": 11000,
     "precioOfer": 11000,
     "img": "../img/collar1.jpg"
+  },
+  {
+    "id": 21,
+    "nombre": "Collar Lisboa",
+    "categoria": "collar",
+    "descripcion": "Collar de Plata 925 Italiana con detalles en baño de oro 18k",
+    "precio": 14000,
+    "precioOfer": 14000,
+    "img": "../img/collar2.jpg"
+  },
+  {
+    "id": 22,
+    "nombre": "Collar Lisboa con Dije Cruz",
+    "categoria": "collar",
+    "descripcion": "Collar de Plata 925 Italiana con detalles en baño de oro 18k, cruz de Plata 925 Italiana",
+    "precio": 19000,
+    "precioOfer": 19000,
+    "img": "../img/collar3.jpg"
+  },
+  {
+    "id": 23,
+    "nombre": "Pulsera Luxemburgo Silver",
+    "categoria": "pulsera",
+    "descripcion": "Pulsera de Plata 925 Italiana",
+    "precio": 17000,
+    "precioOfer": 17000,
+    "img": "../img/pulsera1.jpg"
+  },
+  {
+    "id": 24,
+    "nombre": "Pulsera Macedonia Silver",
+    "categoria": "pulsera",
+    "descripcion": "Pulsera de Plata 925 Italiana",
+    "precio": 13000,
+    "precioOfer": 13000,
+    "img": "../img/pulsera2.jpg"
+  },
+  {
+    "id": 25,
+    "nombre": "Pulsera Praga Silver",
+    "categoria": "pulsera",
+    "descripcion": "Pulsera de Plata 925 Italiana",
+    "precio": 13000,
+    "precioOfer": 13000,
+    "img": "../img/pulsera3.jpg"
   }
 ]
