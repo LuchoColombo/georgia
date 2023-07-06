@@ -42,13 +42,15 @@ const getProductos = async () => {
         if (repeat) {
           carrito.map((prod) => {
             if (prod.id === prod.id) {
-              Swal.fire({
-                position: "center",
-                icon: "error",
-                title: "Producto ya agregado a la lista",
-                showConfirmButton: false,
-                timer: 1500,
-              });
+              Toastify({
+                text: "Producto ya agregado a la lista",
+                className: "warning",
+                gravity: "bottom",
+                duration: 2000,
+                onClick: function () {
+                  pintarCarrito();
+                },
+              }).showToast();
             }
           });
         } else {
@@ -58,13 +60,18 @@ const getProductos = async () => {
             nombre: producto.nombre,
             precio: producto.precioOfer,
           });
-          Swal.fire({
-            position: "center",
-            icon: "success",
-            title: "Producto agregado con exito",
-            showConfirmButton: false,
-            timer: 1500,
-          });
+          Toastify({
+            text: "Producto agregado con exito",
+            className: "info",
+            gravity: "bottom",
+            duration: 2000,
+            style: {
+              background: "linear-gradient(to right, #00b09b, #96c93d)",
+            },
+            onClick: function () {
+              pintarCarrito();
+            },
+          }).showToast();
         }
         carritoCounter();
         saveLocal();

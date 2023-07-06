@@ -53,7 +53,15 @@ const eliminarProducto = () => {
   carrito = carrito.filter((carritoId) => {
     return carritoId !== founId;
   });
-
+  Toastify({
+    text: "Producto eliminado",
+    className: "warning",
+    gravity: "bottom",
+    duration: 2000,
+    style: {
+      background: "linear-gradient(to right, #ff5f6d, #ffc371)",
+    },
+  }).showToast();
   carritoCounter();
   saveLocal();
   pintarCarrito();
