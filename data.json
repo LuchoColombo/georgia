@@ -1,0 +1,92 @@
+[
+  {
+    "id": 1,
+    "nombre": "Anillo Minsk Silver",
+    "categoria": "anillo",
+    "descripcion": "Anillo de Plata 925 Italiana",
+    "precio": 9000,
+    "precioOfer": 9000,
+    "img": "../img/anillo1.jpg"
+  },
+  {
+    "id": 2,
+    "nombre": "Anillo Berna Silver",
+    "categoria": "anillo",
+    "descripcion": "Anillo de Plata 925 Italiana",
+    "precio": 9000,
+    "precioOfer": 9000,
+    "img": "../img/anillo2.jpg"
+  },
+  {
+    "id": 3,
+    "nombre": "Anillo Dublín Silver",
+    "categoria": "anillo",
+    "descripcion": "Anillo de Plata 925 Italiana",
+    "precio": 9000,
+    "precioOfer": 9000,
+    "img": "../img/anillo3.jpg"
+  },
+  {
+    "id": 4,
+    "nombre": "Anillo Riga",
+    "categoria": "anillo",
+    "descripcion": "Anillo doble de Plata 925 Italiana con detalles en baño de oro 18k",
+    "precio": 11000,
+    "precioOfer": 11000,
+    "img": "../img/anillo4.jpg"
+  },
+  {
+    "id": 5,
+    "nombre": "Anillo Suecia Silver",
+    "categoria": "anillo",
+    "descripcion": "Anillo de Plata 925 Italiana",
+    "precio": 9000,
+    "precioOfer": 9000,
+    "img": "../img/anillo5.jpg"
+  },
+  {
+    "id": 6,
+    "nombre": "Anillo Suiza Silver",
+    "categoria": "anillo",
+    "descripcion": "Anillo de Plata 925 Italiana",
+    "precio": 9000,
+    "precioOfer": 9000,
+    "img": "../img/anillo6.jpg"
+  },
+  {
+    "id": 7,
+    "nombre": "Anillo Euro",
+    "categoria": "anillo",
+    "descripcion": "Anillo de Plata 925 Italiana",
+    "precio": 11000,
+    "precioOfer": 11000,
+    "img": "../img/anillo7.jpg"
+  },
+  {
+    "id": 8,
+    "nombre": "Anillo Hungría",
+    "categoria": "anillo",
+    "descripcion": "Anillo de Plata 925 Italiana con detalles en baño de oro 18k",
+    "precio": 11000,
+    "precioOfer": 11000,
+    "img": "../img/anillo8.jpg"
+  },
+  {
+    "id": 9,
+    "nombre": "Anillo Rumania",
+    "categoria": "anillo",
+    "descripcion": "Anillo de Plata 925 Italiana con detalles en baño de oro 18k",
+    "precio": 11000,
+    "precioOfer": 11000,
+    "img": "../img/anillo9.jpg"
+  },
+  {
+    "id": 10,
+    "nombre": "Collar Rumania",
+    "categoria": "collar",
+    "descripcion": "Collar de Plata 925 Italiana con detalles en baño de oro 18k",
+    "precio": 11000,
+    "precioOfer": 11000,
+    "img": "../img/collar1.jpg"
+  }
+]
