@@ -1,4 +1,4 @@
-const anillosProd = document.getElementById("anillosProd");
+const arosProd = document.getElementById("arosProd");
 const verCarrito = document.getElementById("verCarrito");
 const modalContainer = document.getElementById("modalContainer");
 const cantidadCarrito = document.getElementById("cantidadCarrito");
@@ -9,7 +9,7 @@ const getProductos = async () => {
   const resp = await fetch("../data.json");
   const data = await resp.json();
 
-  productoTipo("anillo", data, anillosProd);
+  productoTipo("aro", data, arosProd);
 };
 
 getProductos();

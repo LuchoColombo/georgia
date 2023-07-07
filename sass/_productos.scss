@@ -16,17 +16,18 @@
     background-color: #eee;
     box-sizing: border-box;
     width: 250px;
-    min-height: 460px;
+    min-height: 513px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     div {
       h2 {
         font-size: 20px;
         padding-top: 10px;
         font-weight: bold;
+        min-height: 59px;
       }
       h4 {
         font-size: 16px;
-        min-height: 40px;
+        min-height: 68px;
       }
 
       h5 {

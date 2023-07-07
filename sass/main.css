@@ -2,7 +2,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 1rem 2rem 1rem 2rem;
+  padding: 1rem 2rem;
   background-color: #cecaca;
   position: fixed;
   font-size: 18px;
@@ -16,62 +16,58 @@ header {
 header .logo {
   max-width: 5rem;
 }
-header .nav-list {
+header .nav {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+header .nav .nav-list {
   list-style-type: none;
   display: flex;
   gap: 2rem;
 }
-header .nav-list li a {
+header .nav .nav-list li a {
   text-decoration: none;
   color: #1c1c1c;
 }
-
-.logoCarrito {
+header .logoCarrito {
   padding-left: 25px;
+  margin-top: 20px;
   cursor: pointer;
 }
-
-.cantidadCarrito {
+header .cantidadCarrito {
   background-color: red;
   color: white;
   border-radius: 50%;
   font-size: 12px;
-  margin-left: 25px;
-  padding: 4px;
-  top: 37px;
-  position: absolute;
+  margin-left: 15px;
+  padding: 7px;
+  margin-top: -5px;
+  margin-right: 15px;
+  display: none;
+  text-align: center;
+}
+header .abrir-menu,
+header .cerrar-menu {
   display: none;
 }
-
-.abrir-menu,
-.cerrar-menu {
-  display: none;
-}
-
-@media screen and (max-width: 825px) {
-  .abrir-menu,
-  .cerrar-menu {
+@media screen and (max-width: 853px) {
+  header .logo {
+    max-width: 4rem;
+  }
+  header .abrir-menu,
+  header .cerrar-menu {
     display: block;
     border: 0;
     font-size: 1.25rem;
     background-color: transparent;
     cursor: pointer;
-  }
-  .abrir-menu.abrir-menu,
-  .cerrar-menu.abrir-menu {
     color: #1c1c1c;
   }
-  .abrir-menu.cerrar-menu,
-  .cerrar-menu.cerrar-menu {
+  header .cerrar-menu {
     color: #ececec;
   }
-  .nav {
-    opacity: 0;
-    visibility: hidden;
-    display: flex;
-    flex-direction: column;
-    align-items: end;
-    gap: 2rem;
+  header .nav {
     position: fixed;
     top: 0;
     right: 0;
@@ -79,21 +75,27 @@ header .nav-list li a {
     background-color: #1c1c1c;
     padding: 2rem;
     box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.5);
-  }
-  .nav.visible {
-    opacity: 1;
-    visibility: visible;
-  }
-  .nav .nav-list {
+    opacity: 0;
+    visibility: hidden;
     flex-direction: column;
     align-items: start;
     gap: 2rem;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+  }
+  header .nav.visible {
+    opacity: 1;
+    visibility: visible;
+  }
+  header .nav .nav-list {
+    flex-direction: column;
+    gap: 2rem;
     font-size: 20px;
   }
-  .nav .nav-list li a {
+  header .nav .nav-list li a {
     color: #ececec;
   }
 }
+
 footer {
   background-color: #f7f7f7;
   padding-top: 50px;
@@ -230,6 +232,7 @@ footer .footer-bottom {
 }
 .descripciones article p {
   margin-bottom: 0;
+  min-height: 106px;
 }
 .descripciones article a button {
   background-color: #333;
@@ -280,17 +283,18 @@ footer .footer-bottom {
   background-color: #eee;
   box-sizing: border-box;
   width: 250px;
-  min-height: 460px;
+  min-height: 513px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 .ordenado .flex-item div h2 {
   font-size: 20px;
   padding-top: 10px;
   font-weight: bold;
+  min-height: 59px;
 }
 .ordenado .flex-item div h4 {
   font-size: 16px;
-  min-height: 40px;
+  min-height: 68px;
 }
 .ordenado .flex-item div h5 {
   font-size: 16px;
@@ -428,7 +432,7 @@ footer .footer-bottom {
   align-items: center;
   position: fixed;
   overflow: auto;
-  z-index: 9;
+  z-index: 101;
   top: 5vh;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
   scrollbar-color: none;
@@ -445,7 +449,7 @@ footer .footer-bottom {
   width: 100%;
   position: sticky;
   top: 0;
-  z-index: 10;
+  z-index: 102;
 }
 .modal-container .modal-header-title {
   margin: 0;
@@ -482,7 +486,7 @@ footer .footer-bottom {
 }
 .modal-container .modal-content h2 {
   margin: 0 0 5px;
-  font-size: 1.6rem;
+  font-size: 2vw;
   font-weight: bold;
 }
 .modal-container .total-content {
@@ -505,6 +509,9 @@ footer .footer-bottom {
   }
   .modal-container .modal-content img {
     margin-right: 20px;
+  }
+  .modal-container .modal-content h2 {
+    font-size: 1.9rem;
   }
 }
 

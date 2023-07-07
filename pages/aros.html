@@ -13,6 +13,11 @@
     <link rel="stylesheet" href="../sass/main.css" />
     <link rel="shortcut icon" href="../img/logoPag.png" type="image/x-icon" />
     <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css"
+    />
+    <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
@@ -45,103 +50,22 @@
           <li><a href="./contact.html">Contact</a></li>
         </ul>
       </nav>
+      <div>
+        <img
+          id="verCarrito"
+          class="logoCarrito"
+          src="../assets/carrito.svg"
+          alt="Carrito"
+        />
+        <span id="cantidadCarrito" class="cantidadCarrito"></span>
+      </div>
     </header>
     <main>
       <!-- <div class="titulo">
         <h1>AROS</h1> 
       </div> -->
-      <section class="ordenado">
-        <article class="flex-item">
-          <img src="../img/aros1.jpg" alt="Aros" class="imagen" />
-          <div>
-            <h2>Aros Grecia Gold</h2>
-            <h4>Aros de Plata 925 Italiana con baño Dorado</h4>
-            <h5><del>$15.000,00</del></h5>
-            <h6>$10.500,00</h6>
-          </div>
-        </article>
-        <article class="flex-item">
-          <img src="../img/aros2.jpg" alt="Aros" class="imagen" />
-          <div>
-            <h2>Aros Italia Gold</h2>
-            <h4>Aros de Plata 925 Italiana con baño dorado</h4>
-            <h5><del>$24.000,00</del></h5>
-            <h6>$16.800,00</h6>
-          </div>
-        </article>
-        <article class="flex-item">
-          <img src="../img/aros3.jpg" alt="Aros" class="imagen" />
-          <div>
-            <h2>Aros Eslovenia Rose</h2>
-            <h4>Aros de Plata 925 Italiana con baño rosado</h4>
-            <h5><del>$8.000,00</del></h5>
-            <h6>$5.600,00</h6>
-          </div>
-        </article>
-        <article class="flex-item">
-          <img src="../img/aros4.jpg" alt="Aros" class="imagen" />
-          <div>
-            <h2>Aros Mónaco Rose</h2>
-            <h4>Aros de Plata 925 Italiana con baño rosado</h4>
-            <h5><del>$9.000,00</del></h5>
-            <h6>$6.300,00</h6>
-          </div>
-        </article>
-        <article class="flex-item">
-          <img src="../img/aros5.jpg" alt="Aros" class="imagen" />
-          <div>
-            <h2>Aros Bielorrusia Silver</h2>
-            <h4>Aros de Plata 925 Italiana</h4>
-            <h5><del>$16.000,00</del></h5>
-            <h6>$11.200,00</h6>
-          </div>
-        </article>
-        <article class="flex-item">
-          <img src="../img/aros8.jpg" alt="Aros" class="imagen" />
-          <div>
-            <h2>Argollas Letonia Silver N° 0</h2>
-            <h4>Argollas de Plata 925 Italian</h4>
-            <h5><del>$3.000,00</del></h5>
-            <h6>$2.100,00</h6>
-          </div>
-        </article>
-        <article class="flex-item">
-          <img src="../img/aros6.jpg" alt="Aros" class="imagen" />
-          <div>
-            <h2>Argollas Letonia Silver N° 2</h2>
-            <h4>Argollas de Plata 925 Italian</h4>
-            <h5><del>$3.500,00</del></h5>
-            <h6>$2.450,00</h6>
-          </div>
-        </article>
-        <article class="flex-item">
-          <img src="../img/aros9.jpg" alt="Aros" class="imagen" />
-          <div>
-            <h2>Argollas Moldova Gold N° 4</h2>
-            <h4>Argollas de Plata 925 Italiana con baño dorado</h4>
-            <h5><del>$7.200,00</del></h5>
-            <h6>$5.040,00</h6>
-          </div>
-        </article>
-        <article class="flex-item">
-          <img src="../img/aros10.jpg" alt="Aros" class="imagen" />
-          <div>
-            <h2>Argollas Moldova Gold N° 5</h2>
-            <h4>Argollas de Plata 925 Italiana con baño dorado</h4>
-            <h5><del>$7.700,00</del></h5>
-            <h6>$5.390,00</h6>
-          </div>
-        </article>
-        <article class="flex-item">
-          <img src="../img/aros7.jpg" alt="Aros" class="imagen" />
-          <div>
-            <h2>Argollas Moldova Gold N° 8</h2>
-            <h4>Argollas de Plata 925 Italiana con baño dorado</h4>
-            <h5><del>$10.100,00</del></h5>
-            <h6>$7.070,00</h6>
-          </div>
-        </article>
-      </section>
+      <section id="arosProd" class="ordenado"></section>
+      <div id="modalContainer" class="modal-container"></div>
     </main>
     <footer>
       <div class="footer-container">
@@ -196,6 +120,13 @@
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
     ></script>
     <script src="../js/main.js"></script>
+    <script src="../js/productos.js"></script>
+    <script src="../js/aros.js"></script>
+    <script src="../js/carrito.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/toastify-js"
+    ></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
   </body>
 </html>

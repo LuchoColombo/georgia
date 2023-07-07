@@ -22,12 +22,12 @@ const pintarCarrito = () => {
     let carritoContent = document.createElement("div");
     carritoContent.className = "modal-content";
     carritoContent.innerHTML = `
-      <img src="${producto.img}" alt="Anillo" class="imagen" />
+      <img src="${producto.img}" alt="Producto" class="imagen" />
               <h2>${producto.nombre}</h2>
               <h5>$ ${producto.precio}</h5>
       `;
-
     modalContainer.append(carritoContent);
+    console.log(carritoContent);
 
     let eliminar = document.createElement("button");
 
@@ -44,6 +44,17 @@ const pintarCarrito = () => {
   totalComprado.className = "total-content";
   totalComprado.innerHTML = `Total a pagar $ ${total}`;
   modalContainer.append(totalComprado);
+  totalComprado.addEventListener("click", () => {
+    Swal.fire(
+      "Compra realizada",
+      "Tu pedido llegara en los proximos 5 dias",
+      "success"
+    );
+    carrito = [];
+    carritoCounter();
+    saveLocal();
+    pintarCarrito();
+  });
 };
 verCarrito.addEventListener("click", pintarCarrito);
 
